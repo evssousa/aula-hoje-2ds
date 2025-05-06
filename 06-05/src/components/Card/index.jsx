@@ -1,6 +1,8 @@
+import './style.css'
+
 export default function Card({ texto }) {
     return (
-        <div>
+        <div className="card-container">
             {texto}
         </div>
     )
