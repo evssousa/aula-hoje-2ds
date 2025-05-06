@@ -9,6 +9,7 @@ export default function App() {
 
       <Botao nome='John' idade='34' />
 
+      {/* ============================================== */}
       {/* 
       // O componente Card funciona como uma "caixa"
       // Ele recebe qualquer conteúdo passado entre <Card> ... </Card> como filhos (children)
