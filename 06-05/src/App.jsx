@@ -1,3 +1,4 @@
+import BoxAlerta from './components/BoxAlerta'
 import Card from './components/Card'
 
 // O componente Card funciona como uma "caixa"
@@ -18,6 +19,10 @@ export default function App() {
         <h2>Título 2</h2>
         <p>Outro conteúdo aqui dentro do segundo card</p>
       </Card>
+
+      <BoxAlerta>
+        Hoje iremos ter dois exercícios! Vamos praticar!
+      </BoxAlerta>
     </div>
   )
 }
