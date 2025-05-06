@@ -1,9 +1,11 @@
 import './style.css'
 
-export default function Card({ texto }) {
+// a prop children é uma forma de passar elementos filhos para dentro de um componente.
+
+export default function Card({ children }) {
     return (
         <div className="card-container">
-            {texto}
+            Título: {children}
         </div>
     )
 }
