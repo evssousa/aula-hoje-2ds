@@ -25,19 +25,25 @@ App.jsx
 Projeto: Cadastro de Clientes
 Tipo de Arquiterura: Monolítica
 ---
+```
 [Interface (Componentes Visuais)]
 	      ↓
 [Lógica de Negócio (Funções/Estados)]
 	      ↓
 [Acesso a Dados (LocalStorage, ou API locais/simulados)]
+```
 ---
+```
 Interface: JSX visível ao usuário.
 Lógica de Negócio: validações, manipulação de dados, regras.
 Acesso aos Dados: estados (useState()) ou comunicação com serviços/API.
+```
 ---
+```
 Componentes: FormularioCliente, ListaClientes, App.
 Lógica: evitar cadastro com campos vazio. Evitar emails duplicados
 Armazenar dados temporariamente no estado.
+```
 ---
 Próximo Passo:
 - Refatorar o código
