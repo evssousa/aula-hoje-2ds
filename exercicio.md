@@ -22,7 +22,7 @@ App.jsx
 06/05 - ANÁLISE E PROJETO DE SISTEMAS (APS)
 ~> TEMA: CRIAÇÃO DE UMA ARQUITETURA BASICA PARA SISTEMAS PEQUENOS
 
-Projeto: Cadastro de Clientes
+Projeto: Cadastro de Clientes<br />
 Tipo de Arquiterura: Monolítica
 ---
 ```
