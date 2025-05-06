@@ -1,17 +1,51 @@
-💻 Atividade prática
+### ✍️ Atividade Proposta:
 
-Tarefa: Crie um componente BoxAlerta que recebe children e exibe uma mensagem em destaque.
+Crie uma aplicação React que simule um sistema de **controle de tarefas**.
 
-Dica: Use uma cor de fundo diferente e uma borda grossa.
+> A aplicação deve permitir:
+> 
+> - Adicionar uma nova tarefa;
+> - Marcar tarefa como concluída;
+> - Remover tarefa da lista.
 
-<hr />
+Use `useState` para gerenciar os dados e divida os componentes da seguinte forma:
 
-💻 Atividade prática
-Tarefa:
-
-Crie um componente InputTexto que recebe label, id, e qualquer outro atributo extra.
-Use ...rest para aplicar esses extras no input:
-
-```jsx
-<InputTexto label="Nome" id="nome" placeholder="Digite seu nome" required />
 ```
+App.jsx
+ ├── FormularioTarefa.jsx
+ └── ListaTarefas.jsx
+
+```
+
+---
+
+06/05 - ANÁLISE E PROJETO DE SISTEMAS (APS)
+~> TEMA: CRIAÇÃO DE UMA ARQUITETURA BASICA PARA SISTEMAS PEQUENOS
+
+Projeto: Cadastro de Clientes
+Tipo de Arquiterura: Monolítica
+---
+[Interface (Componentes Visuais)]
+	      ↓
+[Lógica de Negócio (Funções/Estados)]
+	      ↓
+[Acesso a Dados (LocalStorage, ou API locais/simulados)]
+---
+Interface: JSX visível ao usuário.
+Lógica de Negócio: validações, manipulação de dados, regras.
+Acesso aos Dados: estados (useState()) ou comunicação com serviços/API.
+---
+Componentes: FormularioCliente, ListaClientes, App.
+Lógica: evitar cadastro com campos vazio. Evitar emails duplicados
+Armazenar dados temporariamente no estado.
+---
+Próximo Passo:
+- Refatorar o código
+- Correção de bugs
+- Aplicar boas práticas
+- Separar os componentes por função (formulário, lista, item, etc)
+- Criar funções reutilizáveis e separadas da interface
+- Usar estado local (useState) para simular banco de dados mais específico
+- Evitar colocar regras dentro do JSX diretamente
+- Comentar código quando necessário
+---
