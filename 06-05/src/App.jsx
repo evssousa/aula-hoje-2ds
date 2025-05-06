@@ -1,5 +1,9 @@
 import Card from './components/Card'
 
+// O componente Card funciona como uma "caixa"
+// Ele recebe qualquer conteúdo passado entre <Card> ... </Card> como filhos (children)
+
+
 export default function App() {
   return (
     <div>
