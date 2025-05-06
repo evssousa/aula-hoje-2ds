@@ -1,9 +1,11 @@
 import './style.css'
 
-export default function Botao({ nome, idade }) {
+export default function Botao({ nome, idade, ...rest }) {
     return (
-        <button className="botao-container">
-            {nome} {idade}
+        // repassa os outras propriedade
+        // onClick, id, type, etc.
+        <button className="botao-container" {...rest}>
+            {nome} {idade} 
         </button>
     )
 }

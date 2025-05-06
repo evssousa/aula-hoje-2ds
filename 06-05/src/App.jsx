@@ -3,11 +3,20 @@ import BoxAlerta from './components/BoxAlerta'
 import Card from './components/Card'
 
 export default function App() {
+  const alerta = () => {
+    alert('Botão clicado!')
+  }
+
+  // texto é uma prop que usamos diretamente
+  // ...rest pega o restante (onClick, type, etc) e repassa para o <button>
+
   return (
     <div>
       <h1>Usando Props com Rest Params</h1>
 
       <Botao nome='John' idade='34' />
+      <Botao nome='John' idade='34' onClick={alerta} />
+      <Botao nome='Wick' idade='33' type='submit' />
 
       {/* ============================================== */}
       {/* 
