@@ -1,57 +1,30 @@
-### ✍️ Atividade Proposta:
+## 🧩 **Exercício Proposto: “Contador com Botões de + e -” (20 min)**
 
-Crie uma aplicação React que simule um sistema de **controle de tarefas**.
+### 🎯 Desafio:
 
-> A aplicação deve permitir:
-> 
-> - Adicionar uma nova tarefa;
-> - Marcar tarefa como concluída;
-> - Remover tarefa da lista.
+Crie um componente chamado `ControleDeContador` com:
 
-Use `useState` para gerenciar os dados e divida os componentes da seguinte forma:
+- Um número exibido na tela (iniciando em 0).
+- Dois botões:
+    - `+` para aumentar 1.
+    - `–` para diminuir 1.
+- O valor nunca pode ser menor que 0.
 
-```
-App.jsx
- ├── FormularioTarefa.jsx
- └── ListaTarefas.jsx
+### ✅ Regras:
 
-```
+- Usar `useState`.
+- Utilizar `setNumero` para atualizar o valor.
+- Bloquear o número negativo com uma verificação no botão de subtração.
 
 ---
 
-06/05 - ANÁLISE E PROJETO DE SISTEMAS (APS)
-~> TEMA: CRIAÇÃO DE UMA ARQUITETURA BASICA PARA SISTEMAS PEQUENOS
+### 💡 Dica:
 
-Projeto: Cadastro de Clientes<br />
-Tipo de Arquiterura: Monolítica
----
+```jsx
+function diminuir() {
+  if (numero > 0) {
+    setNumero(numero - 1);
+  }
+}
+
 ```
-[Interface (Componentes Visuais)]
-	      ↓
-[Lógica de Negócio (Funções/Estados)]
-	      ↓
-[Acesso a Dados (LocalStorage, ou API locais/simulados)]
-```
----
-```
-Interface: JSX visível ao usuário.
-Lógica de Negócio: validações, manipulação de dados, regras.
-Acesso aos Dados: estados (useState()) ou comunicação com serviços/API.
-```
----
-```
-Componentes: FormularioCliente, ListaClientes, App.
-Lógica: evitar cadastro com campos vazio. Evitar emails duplicados
-Armazenar dados temporariamente no estado.
-```
----
-Próximo Passo:
-- Refatorar o código
-- Correção de bugs
-- Aplicar boas práticas
-- Separar os componentes por função (formulário, lista, item, etc)
-- Criar funções reutilizáveis e separadas da interface
-- Usar estado local (useState) para simular banco de dados mais específico
-- Evitar colocar regras dentro do JSX diretamente
-- Comentar código quando necessário
----
